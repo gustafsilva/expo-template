@@ -12,6 +12,8 @@ module.exports = function (api) {
           alias: {
             core: "./src/core",
             features: "./src/features",
+            navigation: "./src/navigation",
+            screens: "./src/screens",
             assets: "./assets"
           },
         },

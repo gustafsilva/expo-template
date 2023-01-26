@@ -7,8 +7,8 @@
 import { LinkingOptions } from "@react-navigation/native";
 import * as Linking from "expo-linking";
 
-import { RootStackParamList } from "features/navigation/types";
-import PATHS from "features/navigation/constants/Paths";
+import { RootStackParamList } from "navigation/types";
+import PATHS from "navigation/constants/Paths";
 
 const LINKING: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.createURL("/")],

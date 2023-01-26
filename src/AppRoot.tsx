@@ -2,7 +2,7 @@ import React from "react";
 
 import CoreProvider from "core/providers/CoreProvider";
 
-import NavigationProvider from "features/navigation/providers/NavigationProvider";
+import NavigationProvider from "navigation/providers/NavigationProvider";
 
 function AppRoot() {
   return (

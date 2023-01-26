@@ -6,14 +6,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Colors from "core/constants/Colors";
 import useColorScheme from "core/hooks/useColorScheme";
 
-import {
-  RootTabParamList,
-  RootTabScreenProps,
-} from "features/navigation/types";
-import PATHS from "features/navigation/constants/Paths";
+import { RootTabParamList, RootTabScreenProps } from "navigation/types";
+import PATHS from "navigation/constants/Paths";
 
-import HomeScreen from "features/home/screens/HomeScreen";
-import SettingsScreen from "features/settings/screens/SettingsScreen";
+import HomeScreen from "screens/HomeScreen";
+import SettingsScreen from "screens/SettingsScreen";
 
 /**
  * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/

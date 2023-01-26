@@ -12,8 +12,8 @@ import {
 
 import useColorScheme from "core/hooks/useColorScheme";
 
-import LINKING from "features/navigation/constants/Linking";
-import RootNavigator from "features/navigation/navigators/RootNavigator";
+import LINKING from "navigation/constants/Linking";
+import RootNavigator from "navigation/navigators/RootNavigator";
 
 function NavigationProvider() {
   const colorScheme = useColorScheme();
