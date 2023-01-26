@@ -1,7 +1,9 @@
 import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
+import { ThemeProvider } from "@rneui/themed";
 
+import THEME from "core/constants/Theme";
 import useCachedResources from "core/hooks/useCachedResources";
 import { ViewProps } from "core/components/Themed";
 
@@ -15,9 +17,11 @@ function CoreProvider({ children }: CoreProviderProps) {
 
   return (
     <SafeAreaProvider>
-      {children}
+      <ThemeProvider theme={THEME}>
+        {children}
 
-      <StatusBar />
+        <StatusBar />
+      </ThemeProvider>
     </SafeAreaProvider>
   );
 }
