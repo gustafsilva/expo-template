@@ -4,6 +4,7 @@
  *
  */
 import React from "react";
+import { ColorSchemeName, Pressable, StyleSheet } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import {
@@ -12,21 +13,19 @@ import {
   DarkTheme,
 } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { ColorSchemeName, Pressable } from "react-native";
 
-import Colors from "../constants/Colors";
-import useColorScheme from "../hooks/useColorScheme";
-import ModalScreen from "../screens/ModalScreen";
-import NotFoundScreen from "../screens/NotFoundScreen";
-import TabOneScreen from "../screens/TabOneScreen";
-import TabTwoScreen from "../screens/TabTwoScreen";
+import Colors from "core/constants/Colors";
+import useColorScheme from "core/hooks/useColorScheme";
+import ModalScreen from "core/screens/ModalScreen";
+import NotFoundScreen from "core/screens/NotFoundScreen";
+import TabOneScreen from "core/screens/TabOneScreen";
+import TabTwoScreen from "core/screens/TabTwoScreen";
 import {
   RootStackParamList,
   RootTabParamList,
   RootTabScreenProps,
-} from "../types";
+} from "core/types";
 import LinkingConfiguration from "./LinkingConfiguration";
-import { StyleSheet } from "react-native";
 
 export default function Navigation({
   colorScheme,

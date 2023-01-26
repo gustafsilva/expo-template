@@ -26,7 +26,7 @@
     "test": "jest --watchAll",
     "format:check": "prettier --check App.tsx ./src",
     "format:write": "prettier --write App.tsx ./src",
-    "lint": "yarn run format:check && eslint App.tsx src/**/**/**.ts*"
+    "lint": "yarn run format:check && eslint App.tsx src/**/**.ts* src/core/**/**.ts* src/features/**/**.ts*"
   },
   "jest": {
     "preset": "jest-expo"
@@ -37,6 +37,7 @@
     "@react-navigation/native": "6.0.2",
     "@react-navigation/native-stack": "6.1.0",
     "expo": "47.0.12",
+    "expo-application": "~5.0.1",
     "expo-asset": "8.7.0",
     "expo-constants": "14.0.2",
     "expo-font": "11.0.1",
@@ -54,6 +55,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
+    "@babel/preset-typescript": "7.18.6",
     "@react-native-community/eslint-config": "3.2.0",
     "@types/react": "18.0.24",
     "@types/react-native": "0.70.6",
