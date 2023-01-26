@@ -1,8 +1,9 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import ModalScreen from "core/screens/ModalScreen";
 import NotFoundScreen from "core/screens/NotFoundScreen";
+
+import ModalScreen from "features/home/screens/ModalScreen";
 
 import { RootStackParamList } from "features/navigation/types";
 import BottomTabNavigator from "features/navigation/navigators/BottomTabNavigator";
