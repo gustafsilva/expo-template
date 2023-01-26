@@ -13,7 +13,7 @@ import {
   calculateSpacingInNumber,
 } from "core/helpers/spacing";
 
-interface BoxProps extends ViewProps {
+export interface BoxProps extends ViewProps {
   m?: Spacing;
   mt?: Spacing;
   mb?: Spacing;
@@ -51,7 +51,7 @@ interface BoxProps extends ViewProps {
 
   backgroundColor?: string;
 
-  customStyle?: ViewStyle;
+  customStyle?: any;
 }
 
 function Box(props: BoxProps) {

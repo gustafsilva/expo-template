@@ -1,13 +1,18 @@
 import React from "react";
 import { StyleProp, StyleSheet, TextStyle } from "react-native";
-import { Text as TextRNE, TextProps as TextPropsRNE } from "@rneui/base";
-import { useTheme } from "@rneui/themed";
+import {
+  useTheme,
+  Text as TextRNE,
+  TextProps as TextPropsRNE,
+} from "@rneui/themed";
 
 import FONTS from "core/constants/Fonts";
+import Box, { BoxProps } from "core/components/Box";
 
-interface TextProps extends TextPropsRNE {
+export interface TextProps extends BoxProps, TextPropsRNE {
   label?: boolean;
   bold?: boolean;
+  style?: any;
   customStyle?: StyleProp<TextStyle>;
 }
 
@@ -24,14 +29,16 @@ function Text(props: TextProps) {
   };
 
   return (
-    <TextRNE
-      {...props}
-      h1Style={styles.h1Style}
-      h2Style={styles.h2Style}
-      h3Style={styles.h3Style}
-      h4Style={styles.h4Style}
-      style={[style, props.customStyle]}
-    />
+    <Box {...props}>
+      <TextRNE
+        {...props}
+        h1Style={styles.h1Style}
+        h2Style={styles.h2Style}
+        h3Style={styles.h3Style}
+        h4Style={styles.h4Style}
+        style={[style, props.customStyle]}
+      />
+    </Box>
   );
 }
 
