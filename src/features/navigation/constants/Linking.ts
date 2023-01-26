@@ -1,28 +1,29 @@
 /**
- * Learn more about deep linking with React Navigation
- * https://reactnavigation.org/docs/deep-linking
+ * Learn more about deep LINKING with React Navigation
+ * https://reactnavigation.org/docs/deep-LINKING
  * https://reactnavigation.org/docs/configuring-links
  */
 
 import { LinkingOptions } from "@react-navigation/native";
 import * as Linking from "expo-linking";
 
-import { RootStackParamList } from "core/types";
+import { RootStackParamList } from "features/navigation/types";
+import PATHS from "features/navigation/constants/Paths";
 
-const linking: LinkingOptions<RootStackParamList> = {
+const LINKING: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.createURL("/")],
   config: {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          Home: {
             screens: {
-              TabOneScreen: "one",
+              HomeScreen: PATHS.Home,
             },
           },
-          TabTwo: {
+          Settings: {
             screens: {
-              TabTwoScreen: "two",
+              SettingsScreen: PATHS.Settings,
             },
           },
         },
@@ -33,4 +34,4 @@ const linking: LinkingOptions<RootStackParamList> = {
   },
 };
 
-export default linking;
+export default LINKING;
