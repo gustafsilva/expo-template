@@ -8,10 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0]
 ### Added
-- [ ] Added and configured Linter;
-- [ ] Added and configured Prettier;
+- [x] Added and configured Linter;
+- [x] Added and configured Prettier;
 - [ ] Added and configured Jest for testing;
-- [ ] Configured initial infra;
+- [ ] Added and configured i18n;
+- [ ] Configured initial INFRA;
 - [ ] Added initial core components;
 - [ ] Added initial core settings;
 - [ ] Added example features;
+- [ ] Updated initial docs;
+- [ ] Published in the NPM;
