@@ -5,7 +5,7 @@ import { StatusBar } from "expo-status-bar";
 import Box from "core/components/Box";
 import Text from "core/components/Text";
 
-export default function ModalScreen() {
+function ModalScreenContent() {
   return (
     <Box flex={1} justifyContent="center" alignItems="center">
       <Text h3>Modal Screen</Text>
@@ -15,3 +15,5 @@ export default function ModalScreen() {
     </Box>
   );
 }
+
+export default ModalScreenContent;
