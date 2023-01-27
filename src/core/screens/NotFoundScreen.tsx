@@ -2,13 +2,14 @@ import React from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-import { Text, View } from "core/components/Themed";
+import Box from "core/components/Box";
+import Text from "core/components/Text";
 
 function NotFoundScreen() {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.container}>
+    <Box style={styles.container}>
       <Text style={styles.title}>This screen doesn't exist.</Text>
       <TouchableOpacity
         onPress={() => navigation.navigate("Root")}
@@ -16,7 +17,7 @@ function NotFoundScreen() {
       >
         <Text style={styles.linkText}>Go to home screen!</Text>
       </TouchableOpacity>
-    </View>
+    </Box>
   );
 }
 

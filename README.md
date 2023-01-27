@@ -45,6 +45,37 @@ Run all tests.
 
 Generate the coverage of the code.
 
+## Infra
+
+Basic structure of the project:
+
+```code
+├── AppRoot.tsx
+├── core
+│   ├── components
+│   ├── configs
+│   ├── constants
+│   ├── helpers
+│   ├── hooks
+│   ├── providers
+│   │   └── CoreProvider.tsx
+│   ├── screens
+│   │   └── NotFoundScreen.tsx
+│   └── types.tsx
+├── navigation
+│   ├── constants
+│   │   ├── Linking.ts
+│   │   └── Paths.ts
+│   ├── navigators
+│   │   ├── BottomTabNavigator.tsx
+│   │   └── RootNavigator.tsx
+│   ├── providers
+│   │   └── NavigationProvider.tsx
+│   └── types.tsx
+├── screens
+└── features
+```
+
 ## License 
 
 The content of this repository is covered by the [MIT license](./LICENSE).

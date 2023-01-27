@@ -1,38 +1,14 @@
 import React from "react";
-import { StyleSheet } from "react-native";
 
-import EditScreenInfo from "core/components/EditScreenInfo";
-import { Text, View } from "core/components/Themed";
+import Box from "core/components/Box";
+import Text from "core/components/Text";
 
 function SettingsScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Settings Screen</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="/screens/SettingsScreen.tsx" />
-    </View>
+    <Box flex={1} justifyContent="center" alignItems="center">
+      <Text h3>Settings Screen</Text>
+    </Box>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: "80%",
-  },
-});
 
 export default SettingsScreen;
