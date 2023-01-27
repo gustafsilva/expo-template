@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import Box from "core/components/Box";
 import Text from "core/components/Text";
 
-function NotFoundScreen() {
+function NotFoundScreenContent() {
   const navigation = useNavigation();
 
   return (
@@ -42,4 +42,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NotFoundScreen;
+export default NotFoundScreenContent;

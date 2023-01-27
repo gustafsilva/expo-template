@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import NotFoundScreen from "core/screens/NotFoundScreen";
 
 import { RootStackParamList } from "navigation/types";
+import PATHS from "navigation/constants/Paths";
 import BottomTabNavigator from "navigation/navigators/BottomTabNavigator";
 
 import ModalScreen from "screens/ModalScreen";
@@ -18,17 +19,13 @@ function RootNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Root"
+        name={PATHS.Root}
         component={BottomTabNavigator}
         options={{ headerShown: false }}
       />
-      <Stack.Screen
-        name="NotFound"
-        component={NotFoundScreen}
-        options={{ title: "Oops!" }}
-      />
+      <Stack.Screen {...NotFoundScreen} />
       <Stack.Group screenOptions={{ presentation: "modal" }}>
-        <Stack.Screen name="Modal" component={ModalScreen} />
+        <Stack.Screen {...ModalScreen} />
       </Stack.Group>
     </Stack.Navigator>
   );

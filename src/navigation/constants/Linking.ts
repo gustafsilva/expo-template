@@ -18,17 +18,17 @@ const LINKING: LinkingOptions<RootStackParamList> = {
         screens: {
           Home: {
             screens: {
-              HomeScreen: PATHS.Home,
+              HomeScreen: PATHS.BottomTab.Home,
             },
           },
           Settings: {
             screens: {
-              SettingsScreen: PATHS.Settings,
+              SettingsScreen: PATHS.BottomTab.Settings,
             },
           },
         },
       },
-      Modal: "modal",
+      Modal: PATHS.Modal,
       NotFound: "*",
     },
   },
